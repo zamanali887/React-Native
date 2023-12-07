@@ -3,12 +3,12 @@ import { Button, Image } from 'react-native';
 import Home from '../screens/Frontend/Home';
 import About from '../screens/Frontend/About';
 import Contact from '../screens/Frontend/Contact';
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+// import { createDrawerNavigator } from '@react-navigation/drawer';
 
 
 import Icon from 'react-native-vector-icons/AntDesign';
@@ -19,22 +19,22 @@ import Login from '../screens/Auth/Login';
 import { useAuthcontexts } from '../contexts/AuthContext';
 
 const Logo = () => (
-  <Image source={require('../assets/images/Navy.png')} style={{ width: 50, height: 30 }} />
+  <Image source={'../assets/images/Navy.png'} style={{ width: 50, height: 30 }} />
 );
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
-const Drawer = createDrawerNavigator();
+// const Drawer = createDrawerNavigator();
 
 
-const MyDrawer = () => {
-  return (
-    <Drawer.Navigator>
-      <Drawer.Screen name="Feed" component={Feed} />
-      <Drawer.Screen name="Article" component={Article} />
-    </Drawer.Navigator>
-  );
-}
+// const MyDrawer = () => {
+//   return (
+//     <Drawer.Navigator>
+//       <Drawer.Screen name="Feed" component={Feed} />
+//       <Drawer.Screen name="Article" component={Article} />
+//     </Drawer.Navigator>
+//   );
+// }
 
 
 
